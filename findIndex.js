@@ -8,3 +8,8 @@ const enemies = [
   const letter = enemies.findIndex(enemy => enemy.name === "Скелет");
   console.log(letter); //1
   
+ 
+  const index = enemies.findIndex(enemy => enemy.x > 50 && enemy.y > 50);
+  
+  console.log(index);  // 1 cause вывелся первый элемент, который подошел под условие
+  const index_1 = enemies.findIndex(enemy => enemy.name[0] === "С"); //ckelet
