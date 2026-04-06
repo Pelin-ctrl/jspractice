@@ -36,3 +36,10 @@ const enemies = [
     console.log(invent.name)
   });
   
+
+  grid.forEach(row => {
+    row.forEach(cell => {
+        if (cell === 0) water++;
+        if (cell === 1) land++;
+    });
+});
